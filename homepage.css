@@ -1,0 +1,131 @@
+/* google-homepage style */
+
+html, body {
+    margin: 0;
+    min-height: 100%;
+}
+
+.container {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 85% 5%;
+    grid-template-areas: 
+        "header"
+        "logo"
+        "footer";
+}
+
+.logo_container{
+    position: relative;
+    bottom: 21%;
+    grid-area: logo;
+    justify-self: center;
+    align-self: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.header {
+    grid-area: header;
+    justify-self: start;
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 93%;
+}
+.footer{
+    grid-area: footer;
+    justify-self: start;
+    width: 100%;
+    background-color: rgb(242, 242, 242);
+}
+
+
+input {
+    align-self: start;
+    height:1.75vw;
+    width: 25vw;
+    border-radius: 25px;
+    border-width: 1px;
+    border-color: rgba(169, 169, 169, 0.274);
+}
+
+img {
+    align-self: center;
+    padding: 20px 120px 20px 120px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float: left;
+    padding: 10px;
+}
+
+a {
+    text-decoration:none;
+    color:rgb(0, 0, 0);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 1em;
+}
+
+li a {
+    display: block;
+    text-align:center;
+}
+
+.dot { 
+    flex: 0 0 20%;
+    height: 4px;
+    margin: 1px;
+    background-color: gray;
+    border-radius: 50%;
+    display:inline-block;
+}
+
+.dot_grid {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.login_button {
+    background-color: #1a73e8;
+    color:white;
+    padding: 5px 5px;
+    text-align:center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 5px; 
+    border:none;
+    width: 96px;
+    height:36px;
+    font-family: sans-serif;
+    position: absolute;
+    bottom:94.4%;
+}
+
+.search_button {
+    background-color: #f8f9fa;
+    color:#3c4043;
+    padding: 5px 5px;
+    text-align:center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 5px; 
+    border:none;
+    width: 142.5px;
+    height:36px;
+    font-family: sans-serif;
+    position: relative;
+    top: 20px;
+}
+
